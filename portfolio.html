@@ -38,10 +38,16 @@
             <!--Контакты-->
             <ul class="contacts-list">
              <li class="contacts-item">
+                <svg class="icon-contacts" width="16" height="12">
+                    <use href="./images/contacts.svg#mail" ></use>
+                </svg>
                  <a href="mailto:info@devstudio.com"class="contacts">info@devstudio.com</a>
             </li> 
              <li class="contacts-item">
-                 <a href="tel:+380961111111"class="contacts">+38 096 111 11 11</a>
+                 <svg class="icon-contacts" width="10" height="16">
+                    <use href="./images/contacts.svg#phone" ></use>
+                </svg>
+                 <a href="tel:+380961111111"class="contacts phone">+38 096 111 11 11</a>
                 </li> 
             </ul>  
           
@@ -155,24 +161,70 @@
     </section>
     </main>
 
-    <!--футер-->
-    <footer class="footer-field">
-        <div class="container">
-            <a href="./index.html" class="logo" >Web<span class="second-logo-item">Studio</span></a>
-        <address class="address">
-        <ul >
-            <li class="details">
-                    <a href="https://google.com" class="location">г. Киев, пр-т Леси Украинки, 26</a>  
+   <!--Футер сайта-->  
+   <footer class="footer-field">
+    <div class="container">
+        <div class="footer-flex">
+        <div class="contacts-flex">
+    <a href="./index.html" class="logo">Web<span class="second-logo-item">Studio</span></a>
+     <address class="address">
+    <ul>
+       <li class="details"> 
+             <a href="https://google.com" class="location">г. Киев, пр-т Леси Украинки, 26</a>  
+        </li>
+        <li class="details">
+            <a href="mailto:info@example.com" class="footer-item">info@example.com</a>
+       </li> 
+        <li class="details">
+            <a href="tel:+380991111111" class="footer-item">+38 099 111 11 11</a>
+           </li> 
+       </ul>   
+     </address>
+        </div>
+    
+
+    <!--Присоединяйтесь-->
+    <div class="join-us-flex">
+        <h3 class="join-us-title">присоединяйтесь</h3>
+        <ul class="join-us-list list">
+            <li class="join-us-item">
+                <a class="join-us-link join-us-link-instagram" href="">
+                    <svg class="join-us-icon" width="22" height="22">
+                        <use href="./images/icons.svg#instagram"> </use>
+                    </svg>
+                </a>
             </li>
-            <li class="details">
-                <a href="mailto:info@example.com" class="footer-item">info@example.com</a>
-            </li> 
-            <li class="details">
-                <a href="tel:+380991111111" class="footer-item">+38 099 111 11 11</a>
-                </li> 
-         </ul>   
-        </address>
+
+        
+
+             <li class="join-us-item">
+                <a class="join-us-link join-us-link-twitter" href="">
+                    <svg class="join-us-icon" width="22" height="22">
+                        <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="join-us-item">
+                <a class="join-us-link join-us-link-facebook" href="">
+                    <svg class="join-us-icon" width="22" height="22">
+                        <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="join-us-item">
+                <a class="join-us-link join-us-link-linkedin" href="">
+                    <svg class="join-us-icon" width="22" height="22">
+                        <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
     </div>
-    </footer>
+  </div>
+</div>
+ </footer>
+ 
 </body>
 </html>
