@@ -149,6 +149,7 @@ header {
 
  .contacts:hover, .contacts:focus {
     color: var(--accent-bg-cl);
+    fill:var(--accent-bg-cl);
 }
 
  .contacts {
@@ -157,6 +158,7 @@ header {
     letter-spacing: 0.02em;
     color: var(--txt-cl);
     text-decoration: none;
+    fill:var(--txt-cl);
  }
 
 
