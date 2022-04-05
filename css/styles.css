@@ -118,6 +118,15 @@ header {
 
 .icon-contacts {
     margin-right: 10px;
+    fill: var(--txt-cl);
+}
+
+
+
+.icon-contacts:hover,
+.icon-contacts:focus {
+    fill: #2196f3;
+    
 }
 
 .nav-list { 
@@ -177,7 +186,7 @@ header {
     url(../images/back-color.jpg) ;
     background-color: var(--primary-dark-bg);
     background-repeat: no-repeat;
-    background-size: auto auto;
+    background-size: cover;
     background-position: center;
 }
 
@@ -219,7 +228,6 @@ header {
     height: 120px;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     margin-bottom: 30px;
     background-color: var(--team-bg);
 }
@@ -310,13 +318,15 @@ header {
     
 }
 
-.socials-link:hover,
-.socials-link:focus  {
+.socials-link:hover, .socials-link:focus  {
     background-color: var(--accent-txt-cl);
+    fill:var(--light-txt-cl)
 }
 
-.socials-link:hover .socials-icon{
-    fill:var(--light-txt-cl);
+
+.socials-icon:focus, .socials-icon:hover {
+    fill: var(--light-txt-cl);
+
 }
 
 .socials-item:not(:last-child){
@@ -404,25 +414,27 @@ align-self: center;
   }
   
   .client-link {
-    width: 170px;
-    height: 90px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #afb1b8;
     color: #afb1b8;
     background-color: var(--light-txt-cl);
-    padding: 16px 32px;
     border-radius: 4px;
   }
   
-  .client-link:hover,
-  .client-link:focus {
+  .client-link:hover, .client-link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
   }
   
   .client-icon {
     fill: currentColor;
-    padding-bottom: 30px;
   }
   
 /*Футер*/
@@ -468,31 +480,30 @@ align-self: center;
 
 .join-us-flex{
   margin-left: 70px;
-  width: 206px;
 }
 
 .footer-flex {
     display: flex;
-    list-style-type: none;
-    margin-left: auto;
+    align-items: baseline;
 }
 
 .join-us-title {
-  padding: 20px 0px 10px 0px;
+  font-family: var(--main-font);
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--light-txt-cl);
 }
+
 
 .join-us-icon {
     fill:var(--light-txt-cl);
 }
 
- .join-us-link:hover,
- .join-us-link:focus {
+ .join-us-link:hover,.join-us-link:focus {
       color: var(--light-txt-cl);
       background-color: var(--accent-txt-cl);
  }
@@ -515,6 +526,7 @@ align-self: center;
 /*Портфолио*/
 
 .button-style{
+    cursor: pointer;
     padding: 6px 22px;
     font-weight: 500;
     line-height: 1.62;
@@ -523,14 +535,14 @@ align-self: center;
     letter-spacing: 0.03em;
     color:var(--title-cl);
     background-color: var(--team-bg);
-    border: 4px solid var(--team-bg);
+    border: transparent;
     border-radius: 4px;  
 }
 
 .button-style:hover, .button-style:focus {
     background-color: var(--accent-bg-cl);
-    cursor: pointer;
     color: var(--light-txt-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-list {
@@ -575,16 +587,27 @@ color: var(--txt-cl);
 }
 
 
- .cards-content { 
-    border:1px solid var(--light-txt-cl) ; 
+ .cards-content {  
     margin-right: 30px;
     margin-bottom: 30px;
     width: 370px; 
 }
 
-.cards-content:hover {
+
+.card-link {
+ text-decoration: none;
+ color: currentColor;
+}
+
+.cards-design:hover,
+.cards-design:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.cards-design {
+    display: block;
+}
+
 
 .work-descr {
     padding: 20px 24px;
