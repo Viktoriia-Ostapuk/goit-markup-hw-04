@@ -116,11 +116,11 @@ header {
     margin-right: 50px;
 }
 
+
 .icon-contacts {
     margin-right: 10px;
-    fill: var(--txt-cl);
+    fill: currentColor;
 }
-
 
 
 .icon-contacts:hover,
@@ -309,52 +309,66 @@ header {
      height: 430px;
      
 }
-.socials-link {
-    display: inline-block;
-    width: 44px; 
-    height: 44px;
-    background-color: var(--light-txt-cl);
-    border-radius: 50%;
-    background-position: center;
-    background-size: 20px;  
-    
-}
 
-.socials-link:hover, .socials-link:focus  {
-    background-color: var(--accent-txt-cl);
-    fill:var(--light-txt-cl)
-}
-
-
-.socials-icon:focus, .socials-icon:hover {
-    fill: var(--light-txt-cl);
-
+.socials {
+    display:flex;
+    justify-content: center;  
+     
 }
 
 .socials-item:not(:last-child){
     margin-right: 10px;
 }
+
 .socials-item {
 display: flex;
 align-self: center;
 }
 
-.socials {
-    display:flex;
-    justify-content: center;
+.socials-link {
+    display: inline-block;
+    width: 44px; 
+    height: 44px;
+    background-color: transparent;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 20px; 
     
 }
 
-.socials-icon{
- fill: #AFB1B8;
- width: 22px;
- height: 22px;
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-txt-cl);
+}
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--light-txt-cl);
 }
 
 .socials-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: currentColor;
+}
+
+.socials-icon{
+ width: 22px;
+ height: 22px;
+ fill:#AFB1B8;
+ 
+}
+
+
+
+.socials-link:hover
+.socials-icon
+{fill: var(--light-txt-cl);}
+
+.socials-link:focus
+{
+background-color: var(--accent-txt-cl);
+
 }
 
 .workers {
@@ -505,10 +519,12 @@ align-self: center;
     fill:var(--light-txt-cl);
 }
 
- .join-us-link:hover,.join-us-link:focus {
+ .join-us-link:hover,
+ .join-us-link:focus {
       color: var(--light-txt-cl);
       background-color: var(--accent-txt-cl);
  }
+
  .join-us-link {
     width: 44px;
     height: 44px;
@@ -599,6 +615,9 @@ color: var(--txt-cl);
 .card-link {
  text-decoration: none;
  color: currentColor;
+}
+.cards-design{
+    display: block;
 }
 
 .cards-design:hover,
